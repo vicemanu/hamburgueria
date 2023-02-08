@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/footer.css">
+    <link rel="stylesheet" href="estilo/media.css">
+    <link rel="stylesheet" href="estilo/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  <title>hamburgueria</title>
+</head>
+<body>
+    <header>
+        <div id="navbar" onclick="clickNav()">
+            <img src="imagens/nav-burger.png" id="nav-burger" alt="">
+            </div>
+            <nav id="nav-bar">
+                <a href=""><img src="imagens/logo-brurger.png" id="logo-burger" alt=""></a>
+                <a href="">Cardápio</a>
+                <a href="#local-burger">Unidades</a>
+                <a href="">Sobre nós</a>
+            </nav>
+    </header>
+    <main>
+        <div id="banner-buger">
+            <div class="shadow-banner"></div>
+            <div class="text-banner">
+                <h1>Bom do hamburguer</h1>
+                <p>O melhor hamburguer para você!</p>
+                <a href="#local-burger">Ver Unidades</a>
+            </div>
+        </div>
+        <section id="menu-burger">
+            <div class="box-menu b1">
+                <img src="imagens/im1.jpg" alt="">
+                <h2>Produtos de Qualidade</h2>
+            </div>
+            <div class="box-menu b2">
+                <img src="imagens/img2.jpg" alt="">
+                <h2>Otimos Preços</h2>
+            </div>
+            <div class="box-menu b3">
+                <img src="imagens/img3.jpg" alt="">
+                <h2>O melhor para você</h2>
+            </div>
+
+        </section>
+        <section id="local-burger">
+            <h2>Localizado Em</h2>
+            <a target="_blank" href="https://www.google.com/maps?q=pra%C3%A7a+da+baleia+rio+das+ostras&um=1&ie=UTF-8&sa=X&ved=2ahUKEwizkfGghMD8AhW5H7kGHRDkCyIQ_AUoAXoECAEQAw">(icone) Praça da Baleia rua da praia n°3 - Rio das Ostras</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3871683628386!2d-41.92550884676284!3d-22.527164993804146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97b4aa15409f9d%3A0x646f6aaeb4b93975!2sPra%C3%A7a%20da%20Baleia!5e0!3m2!1spt-BR!2sbr!4v1673448316067!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inf" ">
+        <div class="locais box-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.3871683628386!2d-41.92550884676284!3d-22.527164993804146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97b4aa15409f9d%3A0x646f6aaeb4b93975!2sPra%C3%A7a%20da%20Baleia!5e0!3m2!1spt-BR!2sbr!4v1673448316067!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="box-2 rds">
+            <h3>Redes Sociais</h1>
+            <div class="redes-sociais">
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+        </div>
+        <div class="direitos">
+            <p>Copyright © 2023 Feito por <a target="_blank" href="https://victor-mielke-portfolio.vercel.app/">Victor Mielke</a></p>
+        </div>
+    </footer>
+</body>
+<script>
+
+    var navbar = document.getElementById("nav-bar")
+    var dado = 0
+    function clickNav() {
+        if (dado == 0) {
+            navbar.style.display ="flex"
+            dado++
+        } else {
+            navbar.style.display = "none"
+            dado = 0
+        }
+    }
+</script>
+</html>

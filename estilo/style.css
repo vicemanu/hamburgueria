@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(209, 139, 9);
+}
+
+
+#banner-buger {
+    background: url(../imagens/baner-burger.jpg) no-repeat bottom center;
+    background-size: cover;
+    width: 99.5%;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 5px 10px 4px rgba(0, 0, 0, 0.493);
+}
+
+.shadow-banner {
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(0deg,#000 3%, transparent);
+    position: absolute;
+}
+
+#banner-buger >.text-banner {
+    text-align: center;
+    z-index: 1;
+    font-size: 1.2em;
+    color: orange;
+    margin-top: 170px;
+    text-shadow: 1px 1px 0px rgba(243, 196, 109, 0.548);
+    
+}
+
+#banner-buger >.text-banner > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 16px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 0.75em;
+    text-shadow: none;
+    margin-top: 60px;
+    transition: all 0.3s;
+}
+
+#banner-buger >.text-banner > a:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid orange;
+    color: orange;
+}
+
+#menu-burger {
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 300px;
+    padding: 50px 0px;
+}
+
+.box-menu {
+    width: 280px;
+    height: 280px;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.box-menu::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: black;
+    z-index: 1;
+}
+
+.box-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-menu h2 {
+    z-index: 2;
+    width: 70%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.b1 h2 {
+    font-size: 1.8em;
+
+}
+
+.b2 h2 {
+    font-size: 2em;
+
+}
+
+.b3 h2 {
+    font-size: 1.8em;
+
+}
+
+#local-burger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+#local-burger h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#local-burger a {
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+#local-burger a:hover{
+    color: white;
+}
+
+#local-burger iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
